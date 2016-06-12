@@ -13,8 +13,14 @@
     * **git add -A**  stages All
     * **git add .**   stages new and modified, without deleted
     * **git add -u**  stages modified and deleted, without new                    
-* `工作区 --> 暂存区`的**撤销**操作
-	* **git checkout -- <file&gt;** 撤销文件改动(只能撤销tracted的文件，不能撤销untracted的文件，即新添加的文件)
-	* **git rm --cached <file&gt;** 撤销文件添加(文件夹需再加 -r)
 * 暂存区 --> 版本库
-	* git commit -m "comments"
+	* git commit -m "comments"	提交暂存区的内容
+* 工作区撤销操作
+	* **git checkout -- <file&gt;** 撤销文件改动
+* 暂存区撤销操作
+	* **git reset HEAD <file&gt;** 将暂存区撤销到上一步，即回到工作区
+	* 再执行一次工作区撤销操作
+* 版本库撤销操作
+	
+* 暂存区撤销操作
+	* **git rm --cached <file&gt;** 撤销文件添加(文件夹需再加 -r)
