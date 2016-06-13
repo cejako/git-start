@@ -37,3 +37,6 @@
 	* **git checkout -b dev** 创建并 *切换到* dev分支
 	* **git branch dev** 创建dev分支
 	* **git checkout dev** 切换到dev分支
+* 查看分支
+	* **git branch** 查看本地分支
+	* **git branch -a** 查看本地和远程分支
