@@ -1,12 +1,13 @@
 # Git 入门
 
-### 推荐教程
+### 推荐入门教程
 > [Git 教程 - 廖雪峰的官方网站](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
 
 ### 重要概念
 * 集成式vs分布式
 * 工作区、暂存区和版本库
 * 分支
+* 标签
 
 ### 基本命令
 * 创建仓库
@@ -22,6 +23,10 @@
 * 版本库 --> 远程仓库
 	* **git remote add origin git@github.com:cejako/git-start.git** 关联远程仓库
 	* **git push origin master** 推送最新修改
+* 仓库同步
+	* **git fetch origin <branch&gt;** 从远程仓库拉去最新代码，**只拉取代码，不进行合并**
+	* **git pull origin <branch&gt;** 相当于git fetch之后git merge，**并跟本地代码进行合并**
+	* **git push origin <branch&gt;** 指定分支推送代码至远程仓库
 * `工作区`撤销操作
 	* **git checkout -- <file&gt;** 撤销文件改动
 * `暂存区`撤销操作
@@ -50,3 +55,17 @@
 	* **git merge --no-ff -m "comments" dev** 多了*--no-ff:* 普通合并，会创建一个新的commit，所以需要*-m*，分支删除后，不会丢失分支历史
 * 删除分支
 	* **git branch -d dev** 删除dev分支
+
+### 标签
+* 添加标签
+	* **git tag <tag&gt;** 打一个新标签
+* 查看标签
+	* **git tag**
+* 删除标签
+	* **git tag -d <tag&gt;** 删除标签
+* 推送标签到远程仓库
+	* **git push origin <tag&gt;** 推送至远程仓库
+	* **git push origin --tags** 推送全部尚未推送到远程的本地标签
+* 删除远程参考标签
+	* 先删除本地标签
+	* **git push origin :refs/tags/<tagname&gt;** 推送删除标签
