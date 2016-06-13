@@ -55,6 +55,10 @@
 	* `git merge --no-ff -m "comments" dev` 多了*--no-ff:* 普通合并，会创建一个新的commit，所以需要*-m*，分支删除后，不会丢失分支历史
 * 删除分支
 	* `git branch -d dev` 删除dev分支
+* 删除远程仓库分支
+	* `git push origin :<branchName>` 删除分支，即推送一个空分支
+* 删除远程仓库分支（Gitv1.7.0之后）
+	* `git push origin --delete <branchName>` 删除分支
 
 ### 标签
 * 添加标签
@@ -66,6 +70,8 @@
 * 推送标签到远程仓库
 	* `git push origin <tag>` 推送至远程仓库
 	* `git push origin --tags` 推送全部尚未推送到远程的本地标签
-* 删除远程参考标签
-	* 先删除本地标签
-	* `git push origin :refs/tags/<tagname>` 推送删除标签
+* 删除远程仓库标签
+	* `git tag -d <tagname>` 先删除本地标签
+	* `git push origin :refs/tags/<tagname>` 删除标签，即推送一个空标签
+* 删除远程仓库标签（Gitv1.7.0之后）
+	* `git push origin --delete tag <tagname>` 删除标签
