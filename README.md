@@ -31,6 +31,11 @@
 	* **git reset --hard HEAD^** 即版本回退
 * 文件删除操作
 	* **git rm --cached <file&gt;** 撤销文件添加(文件夹需再加 -r)
+* 暂存工作区内容
+	* **git stash** 暂存当前工作现场，恢复到上一个commit状态
+	* **git stash pop** 恢复上一次暂存的工作区内容
+	* **git stash list** 显示所有的工作区暂存内容
+	* **git stash clear** 清除所有的工作区暂存内容
 	
 ### 分支
 * 创建分支
