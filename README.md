@@ -40,3 +40,7 @@
 * 查看分支
 	* **git branch** 查看本地分支
 	* **git branch -a** 查看本地和远程分支
+* 合并分支
+	* **git merge dev** 把dev分支合并到当前分支
+* 删除分支
+	* **git branch -d dev** 删除dev分支
