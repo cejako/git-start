@@ -11,7 +11,7 @@
 
 ### 基本命令
 * 创建仓库
-		`git init` 
+		git init
 		本地新建一个空的仓库
 	* `git clone git@github.com:cejako/git-start.git` 从远程库克隆
 * 工作区 --> 暂存区*（需要注意tracked和untracted的区别）*
