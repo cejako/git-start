@@ -44,3 +44,4 @@
 	* **git merge dev** 把dev分支合并到当前分支
 * 删除分支
 	* **git branch -d dev** 删除dev分支
+Creating a new branch is quick AND simple.
