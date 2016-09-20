@@ -41,6 +41,7 @@
 	
 		git reset HEAD <file> 将暂存区撤销到上一步，即回到工作区
 		git checkout -- <file> 再执行一次工作区撤销操作
+		git rm -r --cached . 移除所有暂存区刚添加的文件
 * 版本库撤销操作
 	
 		git reset --hard HEAD^ 即版本回退
