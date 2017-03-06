@@ -15,7 +15,7 @@
 
 ### 文件结构：
 
-![pc project](pc-1.jpeg =168x400)
+<img src="pc-1.jpeg" height="400px"/>
 
 * **`css`**: 所有的样式文件，都是以[`sass`](http://sass-lang.com/documentation/file.SASS_REFERENCE.html)语法书写的，除了`common.scss`和`index.scss`中包含的基本都是各页面的共同样式，其他文件都是根据页面来命名的
 * **`images`**: 所有的图片等资源文件，也是以页面为单位拆分文件夹的
