@@ -61,6 +61,7 @@
 		git checkout -b dev 创建并 *切换到* dev分支
 		git branch dev 创建dev分支
 		git checkout dev 切换到dev分支
+		git checkout -b <new branch> origin/<new branch> 从远程对应分支创建并切换到新的分支
 * 查看分支
 	
 		git branch 查看本地分支
